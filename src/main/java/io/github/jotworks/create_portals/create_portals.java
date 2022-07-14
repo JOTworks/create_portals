@@ -43,8 +43,10 @@ public class create_portals
     // Creates a new BlockItem with the id "examplemod:example_block", combining the namespace and path
     public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
-    public static final RegistryObject<Block> activation_block = BLOCKS.register("activation_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL)));
-    public static final RegistryObject<Block> input_block = BLOCKS.register("input_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
+    public static final RegistryObject<Block> activation_block = BLOCKS.register("activation_block", () -> 
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2.5f, 2.5f)));
+    public static final RegistryObject<Block> input_block = BLOCKS.register("input_block", () -> 
+            new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2.5f,2.5f)));
     
     public static final RegistryObject<Item> activation_block_item = ITEMS.register("activation_block", () -> new BlockItem(activation_block.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
     public static final RegistryObject<Item> input_block_item = ITEMS.register("input_block", () -> new BlockItem(input_block.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));

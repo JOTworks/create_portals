@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_portals:activation_block",
+    "create_portals:input_block"
+  ]
+}
